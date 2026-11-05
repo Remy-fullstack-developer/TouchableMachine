@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Recognition System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+    <!-- Teachable Machine -->
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Recognition System</h1>
+
+        <p>Connect your camera to start AI recognition.</p>
+
+        <button id="startBtn">Start Camera</button>
+
+        <button id="stopBtn">Stop Camera</button>
+
+        <div id="camera-container">
+
+            <video id="camera" autoplay playsinline></video>
+
+        </div>
+
+        <h2>AI Prediction</h2>
+
+        <div id="result">
+            Waiting for recognition...
+        </div>
+
+        <div id="predictions"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
